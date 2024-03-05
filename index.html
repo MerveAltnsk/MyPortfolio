@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Merve Altinisik">
+    <title>Merve Altınışık Portfolio</title>
+    <link rel="stylesheet" href="/Portflolio/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="Portfolio"> </a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <img src="image/starss.png" id="stars">
+        <img src="image/moon.png" id="moon">
+        <h2 id="text">WELCOME</h2>
+        <a href="#sec" id="btn">Explore></a>
+        <img src="image/mountains_behind.png" id="mountains_behind">
+        <img src="image/mountains_front.png" id="mountains_front">
+    </section>
+
+    <div id="typing-container">
+        <h1 class="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+            <span id="hello-text" class="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+                Hello, I'm
+            </span>
+            <br>
+            <span id="typing-text"></span>
+        </h1>
+    </div>
+
+    <div class="sec" id="sec">
+        <h2>About Me</h2>
+        <div class="sec" id="AboutSec">
+            <div id="helloContent">
+                <h2>Hello;</h2>
+                <p>
+                    <br> <br>
+                    I am Merve Altinışık. As a software engineer, I stepped into the world of technology with a
+                    passionate and creative approach.
+                    <br> <br>
+                    Developing user-oriented solutions and signing innovative projects is an exciting journey for me.
+                    <br> <br>
+                    I focus on producing projects by prioritizing user experience in software development processes,
+                    <br> <br>
+                    bringing together functionality and aesthetics. Not only writing code, but with the passion I have for
+                    each project,
+                    <br> <br>
+                    I aim to discover how technology can make people's lives better. I am excited to explore the infinite
+                    potential
+                    <br> <br>
+                    of technology and make a difference in this field. My goal is to contribute to the world of
+                    technology
+                    <br> <br>
+                    by improving myself every step of the way, armed with innovative ideas and constantly progressing.
+                    <br> <br>
+                </p>
+                <div class="skills-container" id="skillsButtonContainer">
+                    <span class="skills-button">Skills</span>
+                    <ul class="skills-list">
+                        
+                        <li>HTML/CSS</li>
+                        <li>Microsoft SQL Server</li>
+                        <li>C#</li>
+                        <li>C</li>
+                        <li>C++</li>0
+                        <li>JavaScript</li>
+                        <li>JAVA</li>
+                        <li>OpenGL</li>
+                        <li>Visual Studio</li>
+                        <li>Visual Studio Code</li>
+                        <li>Android Studio</li>
+                        <li>Adobe XD </li>
+                    </ul>
+                </div>
+                <div class="card2" data-tilt data-tilt-scale="1.1">
+                    <div class="card-image2">
+                        <img src="image/p1.png" alt="My Image">
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                        <div class="card-image">
+                            <img src="image/dimensions2.gif" id="img1 ">
+                        </div>
+                    </div>
+
+                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                        <div class="card-image">
+                            <img src="image/w3.gif" id="img1 ">
+                        </div>
+                    </div>
+
+                    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                        <div class="card-image">
+                            <img src="image/dimensions2.gif" id="img1 ">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="sec" id="ProjectsSec">
+        <h3>My Projects</h3>
+        <div class="button-container">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('web')">Web</button>
+            <button onclick="filterProjects('mobile')">Mobile</button>
+        </div>
+        <div class="project_card_container">
+            <div class="card__container">
+                
+                <article class="card__article" data-category="web">
+                    <img src="image/web5.png" alt="image" class="card__img">
+                    <div class="card__data">
+                        <h2 class="card__title">My Portfolio Project</h2>
+                        <span class="card__description">My Portfolio website that I created on the Visual Studio Code platform</span>
+                    </div>
+                </article>
+
+                <article class="card__article" data-category="web">
+                    <img src="image/efood1.png" alt="image" class="card__img">
+                    <div class="card__data">
+                        <h2 class="card__title">Adobe XD Project</h2>
+                        <span class="card__description">Food ordering website desingned in Adobe XD</span>
+                    </div>
+                </article>
+            
+                <article class="card__article" data-category="mobile">
+                    <img src="image/phone1.png" alt="image" class="card__img">
+                    <div class="card__data">
+                        <h2 class="card__title">Mobile Application</h2>
+                        <span class="card__description">Bring together a network of animal lovers and organizations to make a meaning impact on the lives of animals and their communities</span>
+                    </div>
+                </article>
+    
+                <article class="card__article" data-category="web">
+                    <img src="image/Play.png" alt="image" class="card__img">
+                    <div class="card__data">
+                        <h2 class="card__title">Game project</h2>
+                        <span class="card__description">Brick Breaker game with using Java language</span>
+                    </div>
+                </article>
+
+                <article class="card__article" data-category="web">
+                    <img src="image/register_student.png" alt="image" class="card__img">
+                    <div class="card__data">
+                        <h2 class="card__title">Transcript</h2>
+                        <span class="card__description">Website for students to add courses to their curriculum.</span>
+                    </div>
+                </article>
+               
+                <article class="card__article" data-category="web">
+                    <img src="image/openGL.png" alt="image" class="card__img">
+                    <div class="card__data">
+                        <h2 class="card__title">OpenGl Project</h2>
+
+                        <span class="card__description">Using OpenGl and c++ I created automatic cloud animation and car animation</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <button id="scrollToTopBtn" onclick="scrollToTop()">
+        <img src="image/up2.png" alt="Scroll to Top">
+    </button>
+
+    <footer>
+    <p>&copy; Merve Altınışık</p>
+       <div id="IconSec">
+        <div class="IconSection">
+          <a href="https://www.linkedin.com/in/linkedin-kullanici-adi" target="_blank">
+            <img src="image/linkedin.png" alt="LinkedIn" title="LinkedIn">
+          </a>
+        </div>
+        <div class="IconSection">
+          <a href="https://github.com/MerveAltnsk" target="_blank">
+            <img src="image/github3.png" alt="GitHub" title="GitHub">
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="colored-ellipse"></div> 
+
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            glare: true,
+            reverse: true,
+            "max-glare": 0.5
+        })
+    </script>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+        })
+
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+        document.addEventListener("mousemove", function (e) {
+            cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX +
+                "px; top: " + e.clientY + "px;";
+        });
+    </script>
+
+    <script>
+        const aboutButton = document.querySelector('header ul li:nth-child(2) a');
+
+        aboutButton.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            const aboutSection = document.getElementById('AboutSec');
+
+            aboutSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        const projectsButton = document.querySelector('header ul li:nth-child(3) a');
+
+        projectsButton.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            const projectsSection = document.getElementById('ProjectsSec');
+
+            projectsSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        document.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;
+            var aboutSection = document.getElementById('AboutSec');
+            var projectsSection = document.getElementById('ProjectsSec');
+
+            var homeButton = document.querySelector('header ul li:nth-child(1) a');
+            var aboutButton = document.querySelector('header ul li:nth-child(2) a');
+            var projectsButton = document.querySelector('header ul li:nth-child(3) a');
+
+            if (scrollPosition >= aboutSection.offsetTop && scrollPosition < projectsSection.offsetTop) {
+                homeButton.classList.remove('active');
+                aboutButton.classList.add('active');
+                projectsButton.classList.remove('active');
+            } else if (scrollPosition >= projectsSection.offsetTop) {
+                homeButton.classList.remove('active');
+                aboutButton.classList.remove('active');
+                projectsButton.classList.add('active');
+            } else {
+                homeButton.classList.add('active');
+                aboutButton.classList.remove('active');
+                projectsButton.classList.remove('active');
+            }
+        });
+    </script>
+
+    <script>
+        const textArray = ["Merve", "Software Engineer", "Full Stack Web Developer", "Mobile Developer"];
+        let textIndex = 0;
+        let charIndex = 0;
+        const typingElement = document.getElementById("typing-text");
+
+        function type() {
+            if (charIndex < textArray[textIndex].length) {
+                typingElement.innerHTML += textArray[textIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, 50);
+            } else {
+                setTimeout(erase, 1000);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                typingElement.innerHTML = textArray[textIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, 50);
+            } else {
+                textIndex = (textIndex + 1) % textArray.length;
+                setTimeout(type, 1000);
+            }
+        }
+
+        window.onload = function () {
+            setTimeout(type, 1000);
+        };
+    </script>
+
+    <script>
+        const exploreButton = document.getElementById('btn');
+
+        exploreButton.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            const sectionToScroll = document.getElementById('sec');
+
+            window.scrollTo({
+                top: sectionToScroll.offsetTop,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+    <script>
+        function filterProjects(category) {
+            const card__article = document.querySelectorAll('.card__article');
+
+            card__article.forEach(card__article => {
+                const cardCategory = card__article.getAttribute('data-category');
+
+                if (category === 'all' || cardCategory === category) {
+                    card__article.style.display = 'block';
+                } else {
+                    card__article.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+    <script>
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+    window.onscroll = function () {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("scrollToTopBtn").style.display = "block";
+        } else {
+            document.getElementById("scrollToTopBtn").style.display = "none";
+        }
+    }
+    </script>
+    
+</body>
+</html>
