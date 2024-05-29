@@ -743,7 +743,7 @@ z-index: 10000;
 /* For large devices */
 @media screen and (min-width: 1120px) {
   .project_card_container {
-    height: 150vh;
+    height: 200vh;
   }
 
   .card__container {
@@ -838,7 +838,7 @@ footer a {
   border-radius: 50%;
   filter: contrast(200%) blur(50px); 
   z-index: 1;
-  top: 3650px;
+  top: 4000px;
   left: 10%; 
   display: flex;
   position: absolute;
