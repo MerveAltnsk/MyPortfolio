@@ -743,7 +743,7 @@ z-index: 10000;
 /* For large devices */
 @media screen and (min-width: 1120px) {
   .project_card_container {
-    height: 100vh;
+    height: 150vh;
   }
 
   .card__container {
@@ -838,9 +838,10 @@ footer a {
   border-radius: 50%;
   filter: contrast(200%) blur(50px); 
   z-index: 1;
-  top: 3250px;
+  top: 3650px;
   left: 10%; 
   display: flex;
   position: absolute;
   background: radial-gradient(circle at 50% 100%, #ffcae6, #9f65eb);
 }
+
