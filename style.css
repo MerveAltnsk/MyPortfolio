@@ -608,7 +608,7 @@ z-index: 10000;
   place-items: center;
   margin-inline: 1.5rem;
   padding-block: 5rem;
-  margin-top: -15%;
+  margin-top: -25%;
 }
 
 .card__container {
@@ -838,7 +838,7 @@ footer a {
   border-radius: 50%;
   filter: contrast(200%) blur(50px); 
   z-index: 1;
-  top: 3870px;
+  top: 3770px;
   left: 10%; 
   display: flex;
   position: absolute;
