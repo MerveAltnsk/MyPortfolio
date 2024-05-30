@@ -847,7 +847,7 @@ footer a {
   border-radius: 50%;
   filter: contrast(200%) blur(50px); 
   z-index: 1;
-  top: 3700px;
+  top: 3500px;
   left: 10%; 
   display: flex;
   position: absolute;
