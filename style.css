@@ -327,6 +327,8 @@ z-index: 10000;
 
 .card-container {
   display: flex;
+  align-items: flex-start; /* Projelerin üstten hizalanması */
+
   gap: 10px; /* Kartlar arasındaki boşluk */
   max-width: 1200px; /* Kartların maksimum genişliği */
   margin: 0 auto; /* Kartların ortalanması */
@@ -557,6 +559,8 @@ z-index: 10000;
   text-decoration: none;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(117, 91, 234, 0.2);
+  margin-bottom: -20; /* Margin bottom kaldırıldı */
+
 }
 
 .button-container button:hover {
@@ -608,7 +612,7 @@ z-index: 10000;
   place-items: center;
   margin-inline: 1.5rem;
   padding-block: 5rem;
-  margin-top: -15%;
+  margin-top: 5%;
 }
 
 .card__container {
@@ -635,7 +639,7 @@ z-index: 10000;
   box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
   border-radius: 1rem;
   position: absolute;
-  bottom: -9rem;
+  bottom: 0;
   left: 0;
   right: 0;
   margin-inline: auto;
@@ -740,7 +744,6 @@ z-index: 10000;
   }
 }
 
-
 /* For large devices */
 @media screen and (min-width: 1120px) {
   .project_card_container {
@@ -763,6 +766,7 @@ z-index: 10000;
     padding-inline: 2.5rem;
   }
 }
+
 
 
 #scrollToTopBtn {
