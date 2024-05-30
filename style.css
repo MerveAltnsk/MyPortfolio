@@ -740,19 +740,24 @@ z-index: 10000;
   }
 }
 
+
 /* For large devices */
 @media screen and (min-width: 1120px) {
   .project_card_container {
-    height: 200vh;
+    height: auto; /* Konteyner yüksekliğini otomatik yap */
   }
 
   .card__container {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Projeler arasında boşluk bırakın */
   }
+
   .card__img {
-    width: calc(400px * 1);
-    height: calc(300px * 1); 
+    width: 400px; /* Sabit genişlik ve yükseklik */
+    height: 300px; 
   }
+
   .card__data {
     width: 316px;
     padding-inline: 2.5rem;
@@ -838,7 +843,7 @@ footer a {
   border-radius: 50%;
   filter: contrast(200%) blur(50px); 
   z-index: 1;
-  top: 3950px;
+  top: 3620px;
   left: 10%; 
   display: flex;
   position: absolute;
