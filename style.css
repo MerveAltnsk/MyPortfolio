@@ -837,3 +837,24 @@ footer a {
   text-decoration: none;
 }
 
+.color-lighting {
+  position: relative;
+  width: 100%;
+  height: 10px; /* Işıklandırmanın yüksekliği */
+  background: linear-gradient(90deg, #ff0000, #ff9a00, #d0de21, #4fdc4a, #3fdad8, #2fc9e2, #1c7fee, #5f15f2, #ba0cf8, #fb07d9, #ff0000);
+  filter: blur(5px);
+  animation: colorLight 10s linear infinite;
+  z-index: 9999;
+}
+
+@keyframes colorLight {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
