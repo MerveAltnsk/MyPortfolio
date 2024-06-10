@@ -77,6 +77,7 @@
                         <li>C</li>
                         <li>C++</li>
                         <li>JavaScript</li>
+                        <li>Python</li>
                         <li>JAVA</li>
                         <li>OpenGL</li>
                         <li>Visual Studio</li>
@@ -150,13 +151,23 @@
                 </article>
     
                 <article class="card__article" data-category="web">
-                    <img src="image/Play.png" alt="image" class="card__img">
+                    <img src="image/weather3.png" alt="image" class="card__img">
                     <div class="card__data">
-                        <h2 class="card__title">Game project</h2>
-                        <span class="card__description">Brick Breaker game with using Java language</span>
+                        <h2 class="card__title">Current weather</h2>
+                        <span class="card__description">The website showing the weather I created with html css javascript</span>
                     </div>
                 </article>
 
+                <article class="card__article" data-category="web">
+                    <img src="image/Travel2.png" alt="image" class="card__img">
+                    <div class="card__data">
+                        <h2 class="card__title">Travel land</h2>
+                        <span class="card__description">A travel website that introduces the beauties of Bali and calls for adventure</span>
+                        <button class="card__button" onclick="openWebsite()">Go to Website</button>
+                    </div>
+                </article>
+                
+                
                 <article class="card__article" data-category="web">
                     <img src="image/register_student.png" alt="image" class="card__img">
                     <div class="card__data">
@@ -164,6 +175,17 @@
                         <span class="card__description">Website for students to add courses to their curriculum.</span>
                     </div>
                 </article>
+              
+
+
+                <article class="card__article" data-category="web">
+                    <img src="image/Play.png" alt="image" class="card__img">
+                    <div class="card__data">
+                        <h2 class="card__title">Game project</h2>
+                        <span class="card__description">Brick Breaker game with using Java language</span>
+                    </div>
+                </article>
+
                
                 <article class="card__article" data-category="web">
                     <img src="image/openGL.png" alt="image" class="card__img">
@@ -171,14 +193,6 @@
                         <h2 class="card__title">OpenGl Project</h2>
 
                         <span class="card__description">Using OpenGl and c++ I created automatic cloud animation and car animation</span>
-                    </div>
-                </article>
-
-                <article class="card__article" data-category="web">
-                    <img src="image/weather3.png" alt="image" class="card__img">
-                    <div class="card__data">
-                        <h2 class="card__title">Current weather</h2>
-                        <span class="card__description">The website showing the weather I created with html css javascript</span>
                     </div>
                 </article>
 
@@ -380,5 +394,12 @@
     }
     </script>
     
+    <script>
+        function openWebsite() {
+            window.open("https://mervealtnsk.github.io/Travel-Bali-Website/", "_blank"); // Buraya istediğiniz internet sitesinin adresini ekleyin
+        }
+    </script>
+
+
 </body>
 </html>
