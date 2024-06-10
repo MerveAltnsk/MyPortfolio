@@ -682,6 +682,44 @@ z-index: 10000;
   animation: remove-data 1s forwards;
 }
 
+
+.card__button {
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 20px; 
+  vertical-align: top;  
+  cursor: pointer;
+  border: 2px solid #b1ea5b;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-family: 'Adobe Garamond Pro', serif; 
+  background-color: transparent;
+  transition: all 0.3s ease;
+  border-radius: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  background: linear-gradient(90deg, #67bd3f, #72ceff);
+  box-shadow: 0 0 10px rgba(174, 234, 91, 0.9); 
+
+
+}
+
+.card__button:hover {
+  background: linear-gradient(90deg, #72ceff, #67bd3f);
+  color: #fff;
+  border-color: #b1ea5b; 
+}
+
+
+
+
+
+
+
+
 /* Card animation */
 @keyframes show-data {
   50% {
