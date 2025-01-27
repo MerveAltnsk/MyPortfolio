@@ -370,6 +370,24 @@
     </script>
 
     <script>
+        const skillsButton = document.querySelector('.skills-button');
+        const skillsList = document.querySelector('.skills-list');
+
+        skillsButton.addEventListener('mouseenter', () => {
+            skillsList.style.display = 'block';
+        });
+
+        skillsButton.addEventListener('mouseleave', () => {
+            setTimeout(() => {
+                if (!skillsList.matches(':hover')) {
+                    skillsList.style.display = 'none';
+                }
+            }, 100); 
+        });
+    </script>
+
+
+    <script>
         function filterProjects(category) {
             const card__article = document.querySelectorAll('.card__article');
 
@@ -407,7 +425,7 @@
     
     <script>
         function openWebsite() {
-            window.open("https://mervealtnsk.github.io/Travel-Bali-Website/", "_blank"); // Buraya istediğiniz internet sitesinin adresini ekleyin
+            window.open("https://mervealtnsk.github.io/Travel-Bali-Website/", "_blank");  
         }
     </script>
 
