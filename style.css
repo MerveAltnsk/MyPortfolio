@@ -245,6 +245,7 @@ z-index: 10000;
   top: 20%; 
   right: 40px; 
   transform: translateY(-50%);
+  z-index: 9999;
 }
 
 .skills-button {
@@ -255,7 +256,7 @@ z-index: 10000;
   border: 2px solid #c6c0e6;
   border-radius: 4px;
   padding: 10px 20px;
-  color: #ffffff;
+  color: rgb(66, 57, 74);
   font-weight: bold;
   background-color: transparent;
   transition: all 0.3s ease;
@@ -265,13 +266,13 @@ z-index: 10000;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
-  background: linear-gradient(90deg, #755bea, #ff72c0);
+  background: linear-gradient(90deg, #755bea, #d4f2da);
   box-shadow: 0 0 10px rgba(117, 91, 234, 0.9); 
 }
 
 .skills-button:hover {
-  background: linear-gradient(90deg, #9383db, #ff8ecc);
-  color: #fff;
+  background: linear-gradient(90deg, #d4f2da, #9383db);
+  color: rgb(46, 8, 77);
   border-color: #2b1055; 
 }
 
@@ -282,7 +283,7 @@ z-index: 10000;
   
 
   cursor: pointer;
-  border: 2px solid #7f7e7e;
+  border: 2px solid #d4f2da;
   border-radius: 4px;
  
 
@@ -291,11 +292,10 @@ z-index: 10000;
   padding: 0;
   margin: 10px 0 0;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
   position: absolute;
   z-index: 1000;
   transition: background-color 0.3s ease, color 0.3s ease;
-  background: linear-gradient(180deg, #eec3fbdc   30%, #52c5ffd4      50%);
+  background: linear-gradient(180deg, #deece2    30%, #c1e0e6f5 50%);
 }
 
 .skills-list li:before {
@@ -313,7 +313,9 @@ z-index: 10000;
 
 .skills-list li {
   padding: 15px;
-  color: #ffffff;
+  color: rgb(44, 45, 44);
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   border-bottom:linear-gradient(180deg, #9c73e45a 10%, #553dd0 50%);
   transition: all 0.3s ease;
@@ -693,13 +695,13 @@ z-index: 10000;
 
 .card__button {
   margin-top: 10px;
-  color: rgb(255, 255, 255);
-  font-size: 16px;
+  color: rgb(82, 78, 78);
+  font-size: 14px;
   display: inline-block;
   margin-left: 20px; 
   vertical-align: top;  
   cursor: pointer;
-  border: 2px solid #b1ea5b;
+  border: 2px solid #c3c7bc;
   border-radius: 4px;
   padding: 10px 20px;
   font-family: 'Adobe Garamond Pro', serif; 
@@ -709,16 +711,16 @@ z-index: 10000;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
-  background: linear-gradient(90deg, #67bd3f, #72ceff);
-  box-shadow: 0 0 10px rgba(174, 234, 91, 0.9); 
+  background: linear-gradient(90deg, #f9fcdf, #e3f7e1);
+  box-shadow: 0 0 10px rgba(157, 122, 122, 0.9); 
 
 
 }
 
 .card__button:hover {
-  background: linear-gradient(90deg, #72ceff, #67bd3f);
-  color: #fff;
-  border-color: #b1ea5b; 
+  background: linear-gradient(90deg, #e3f7e1, #f9fcdf);
+  color: rgb(0, 0, 0);
+  border-color: #c3c7bc; 
 }
 
 
@@ -885,3 +887,112 @@ footer a {
       background-position: 0% 50%;
   }
 }
+
+
+
+
+
+
+
+#ExperienceSec {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+  max-width: 1200px;
+  box-shadow: 20px 20px 50px rgba(247, 237, 237, 0.5);
+  border-radius: 50px;
+  margin: 90px auto; /* Yatayda ortalamak için */
+}
+
+#ExperienceSec h3 {
+  font-size: 3rem; /* Tek bir font boyutu */
+  font-family: 'Adobe Garamond Pro Regular', serif;
+  background: linear-gradient(180deg, #0a0d71 30%, #563dd0 100%);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 40px;
+  margin-top: -40px; /* Üst boşluk */
+}
+
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;  /* Kartların satırlara sarmasını sağlar */
+  justify-content: center;  /* Yatayda ortalamayı sağlar */
+  align-items: center;  /* Dikeyde ortalamayı sağlar */
+  gap: 30px;
+  width: 100%;
+  margin: 0 auto;  /* Yatayda ortalamak için */
+}
+
+.experience-card {
+  background: #fff;
+  border-radius: 50px;  /* Aynı border-radius kullanımı */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  text-align: left;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 400px;
+  cursor: pointer;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.experience-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.experience-card-header .experience-thumbnail {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.experience-card-header h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.experience-card-body p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  font-weight: 300;
+  text-align: justify;
+  margin-top: 15px;
+}
+
+.experience-card-body p::first-letter {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+.experience-card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  #ExperienceSec {
+      padding: 40px 10px;
+  }
+
+  .experience-card {
+      padding: 15px;
+  }
+}
+
