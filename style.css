@@ -242,7 +242,7 @@ z-index: 10000;
 
 #skillsButtonContainer {
   position: absolute;
-  top: 20%; 
+  top: 12%; 
   right: 40px; 
   transform: translateY(-50%);
   z-index: 9999;
